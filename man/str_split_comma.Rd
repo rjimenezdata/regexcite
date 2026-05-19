@@ -19,9 +19,9 @@ Split a string on commas
 }
 \examples{
 x <- "alfa,bravo,charlie,delta"
-str_split_one(x, pattern = ",")
-str_split_one(x, pattern = ",", n = 2)
+str_split_comma(x)
+str_split_comma(x)
 
 y <- "a,b,c"
-str_split_one(y)
+str_split_one(y, n = 2)
 }
