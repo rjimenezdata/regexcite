@@ -4,7 +4,7 @@
 \alias{str_split_one}
 \title{Split a string}
 \usage{
-str_split_one(string, pattern, n = Inf)
+str_split_one(string, pattern = ",", n = Inf)
 }
 \arguments{
 \item{string}{A character vector with, at most, one element.}
