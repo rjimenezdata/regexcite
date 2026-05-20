@@ -12,13 +12,7 @@
 str_split_nums <- function(string, pattern, n = Inf) {
   stopifnot(is.character(string), length(string) <= 1)
   if (length(string) == 1) {
-    pieces <- stringr::str_split(string = string, pattern = pattern, n = n)[[1]]
-
-    ifelse(
-      stringr::str_detect(pieces, "^[-]?[0-9]*\\.?[0-9]+$"),
-      as.numeric(pieces),
-      NA
-    )
+    as.numeric(stringr::str_split(string = string, pattern = pattern, n = n)[[1]])
   } else {
     numeric()
   }
